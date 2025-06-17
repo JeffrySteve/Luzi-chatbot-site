@@ -35,7 +35,7 @@ function sendMessage() {
   userInput.value = '';
 
   // Call backend API
-  fetch('http://127.0.0.1:5000/get_response', {
+  fetch('https://luzi-brain.onrender.com/get_response', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: message })
