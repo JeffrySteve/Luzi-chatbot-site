@@ -35,7 +35,7 @@ function sendMessage() {
   userInput.value = '';
 
   // Call backend API
-  fetch('https://07ca-2401-4900-1ce3-b17f-75f0-1c13-e8b7-5a43.ngrok-free.app/', {
+  fetch('https://07ca-2401-4900-1ce3-b17f-75f0-1c13-e8b7-5a43.ngrok-free.app/get_response', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: message })
